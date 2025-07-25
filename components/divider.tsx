@@ -1,0 +1,1 @@
+export const DividerY = () => <div className="h-3/5 w-px border border-slate-300" />;
