@@ -2,17 +2,16 @@
 
 This is my submission for the **Performativ Frontend Technical Assessment**. The project is a responsive interface that fetches data from the provided API resource.
 
-Live demo: https://performativ-tech-challenge-tzhv.vercel.app/
+- Live demo: https://performativ-tech-challenge-tzhv.vercel.app
+- Video demo: https://drive.google.com/file/d/166-rNx93M97uYQLhuWhXBWG8-uruwrab/view?usp=sharing
 ---
 
 ## ✨ Features
 
-- ⏳ Filter by date range: Last 24 Hours, Past Week, Past Month, or All Time
-- 📄 Paginated results using the `page` parameter
-- 📱 Responsive layout with Tailwind CSS
-- ✅ Fully typed with TypeScript
-- 🧹 Clean folder structure for scalability
-
+- Transaction Page - CRUD methods for transactions, Toggle between table and grid view and improved pagination
+- Performance Page - Interactive line chart, filter by dates (from and to) and a graphical summary for a specific timeseries point
+- Holdings Page - Interactive Pie Chart, Summary stat cards and navigation through the holding data tree on both list view and pie chart
+  
 ---
 
 ## 🧱 Stack
