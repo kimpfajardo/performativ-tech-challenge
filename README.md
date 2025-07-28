@@ -3,6 +3,7 @@
 This is my submission for the **Performativ Frontend Technical Assessment**. The project is a responsive interface that fetches data from the provided API resource.
 
 Live demo: https://performativ-tech-challenge-tzhv.vercel.app/
+Video demo: https://drive.google.com/file/d/166-rNx93M97uYQLhuWhXBWG8-uruwrab/view?usp=sharing
 ---
 
 ## ✨ Features
