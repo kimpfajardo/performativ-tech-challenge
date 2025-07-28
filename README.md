@@ -8,12 +8,10 @@ This is my submission for the **Performativ Frontend Technical Assessment**. The
 
 ## ✨ Features
 
-- ⏳ Filter by date range: Last 24 Hours, Past Week, Past Month, or All Time
-- 📄 Paginated results using the `page` parameter
-- 📱 Responsive layout with Tailwind CSS
-- ✅ Fully typed with TypeScript
-- 🧹 Clean folder structure for scalability
-
+- Transaction Page - CRUD methods for transactions, Toggle between table and grid view and improved pagination
+- Performance Page - Interactive line chart, filter by dates (from and to) and a graphical summary for a specific timeseries point
+- Holdings Page - Interactive Pie Chart, Summary stat cards and navigation through the holding data tree on both list view and pie chart
+  
 ---
 
 ## 🧱 Stack
