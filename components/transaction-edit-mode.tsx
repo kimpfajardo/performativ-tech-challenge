@@ -130,6 +130,7 @@ export const TransactionEditMode = ({
         ...data,
         settlement_date: data.status === "SETTLED" ? data.settlement_date : "",
         fx_rate: `${data.fx_rate}`,
+        total_amount: data.price * data.quantity,
       },
     };
 
@@ -367,7 +368,7 @@ export const TransactionEditMode = ({
                               shouldDirty: true,
                             });
                           }}
-                          defaultValue={transaction?.transaction_type}>
+                          defaultValue={transaction?.sale_method}>
                           <SelectTrigger id="sale_method">
                             <SelectValue placeholder="Pick one" />
                           </SelectTrigger>

@@ -30,6 +30,7 @@ export const TransactionCard = ({
     const typeToColor = {
       BUY: "bg-blue-500",
       "CASH-COMMITMENT": "bg-green-500",
+      "SELL": "bg-orange-500",
     };
 
     return (

@@ -49,7 +49,7 @@ export function GenericTable<T>({
       </TableHeader>
       <TableBody>
         {data.map((row) => (
-          <TableRow className="hover:bg-slate-200" key={getRowKey(row)}>
+          <TableRow className="hover:bg-slate-200 motion-translate-y-in-25 motion-blur-in-lg" key={getRowKey(row)}>
             {columns.map((col) => {
               const content =
                 typeof col.render === "function"

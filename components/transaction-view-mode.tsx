@@ -114,8 +114,6 @@ export const TransactionViewMode = ({
     ? toNormalDate(transaction?.settlement_date as string)
     : "";
 
-    console.log("transaction?.total_amount", transaction);
-
   return (
     <>
       <DialogHeader>

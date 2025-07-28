@@ -25,15 +25,19 @@ export const TransactionDialog = ({
 
   const saveUpdatedTransaction = async (value: Transaction) => {
     setIsLoading(true);
- 
+
     try {
       const res = await updateTransactionById({
         ...value,
         id: selectedTransaction?.id ?? "",
-        total_amount: value.price * value.quantity
+        total_amount: value.price * value.quantity,
       });
 
-      handleSelectTransaction(value);
+      handleSelectTransaction({
+        ...value,
+        id: selectedTransaction?.id ?? "",
+        total_amount: value.price * value.quantity,
+      });
       if (res === "Transaction updated") {
         await refetchTransactions();
         toast(res);
@@ -45,7 +49,7 @@ export const TransactionDialog = ({
         description: "Try again later",
       });
     }
-    
+
     setIsLoading(false);
   };
 
