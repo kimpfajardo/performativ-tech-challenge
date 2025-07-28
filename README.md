@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 Performativ Tech Challenge
 
-## Getting Started
+This is my submission for the **Performativ Frontend Technical Assessment**. The project is a responsive interface that fetches data from the provided API resource.
+---
 
-First, run the development server:
+## ✨ Features
+
+- ⏳ Filter by date range: Last 24 Hours, Past Week, Past Month, or All Time
+- 📄 Paginated results using the `page` parameter
+- 📱 Responsive layout with Tailwind CSS
+- ✅ Fully typed with TypeScript
+- 🧹 Clean folder structure for scalability
+
+---
+
+## 🧱 Stack
+
+- **Next.js** (App Router)
+- **TypeScript**
+- **Tailwind CSS**
+- **Zod** – schema validation for API responses
+- **clsx** – for conditional class management
+- **Lucide-react** – icon set
+- **ShadCN UI** - for reusable components and charts
+
+---
+
+## 📂 Folder Structure
+
+```
+src/
+├── app/                  # Next.js App Router structure (holdings, performance and transactions)
+│   └── (dashboard)       # Root route with main UI
+│       └── layout.tsx    # Layout and navigation common for 3 subpages
+│       └── holdings
+│           └── page.tsx  # Contains user assets and graphs
+│       └── performance
+│           └── page.tsx  # Contains timeseries data and graphs
+│       └── transactions
+│           └── page.tsx  # Contains user transactions and basic CRUD operations
+├── components/           # Shared UI components (e.g., SearchInput, ResultItem)
+├── lib/                  # Helpers and utilities (types, context, actions and hooks)
+├── config/               # Third-party setups like axios
+```
+
+---
+
+## 🚀 Getting Started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+git clone https://github.com/kimpfajardo/performativ-tech-challenge.git
+cd performativ-tech-challenge
+bun install
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit `http://localhost:3000` to use the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🙌 Thanks
 
-## Learn More
+Thanks to Performativ for the opportunity to work on this challenge. Looking forward to your feedback!
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+— **Kim Fajardo**
