@@ -12,12 +12,14 @@ export const InstrumentCard = ({
   onRemoveInstrument: VoidFunction;
 }) => {
   return (
-    <Box className="flex flex-col gap-2 relative">
+    <Box className="relative flex flex-col gap-2">
       <div className="flex justify-between">
-        <div className="flex gap-4 items-start">
-          <div className="w-full flex flex-col gap-2">
-            <Badge className="mt-1">{instrument.symbol}</Badge>
-            <span className="text-xs md:text-2xl font-bold break-after-all">
+        <div className="flex items-start gap-4">
+          <div className="flex flex-col w-full gap-2">
+            {instrument?.symbol && (
+              <Badge className="mt-1">{instrument.symbol}</Badge>
+            )}
+            <span className="text-xs font-bold md:text-2xl break-after-all">
               {instrument.name}
             </span>
           </div>
@@ -38,8 +40,8 @@ export const InstrumentCard = ({
           </p>
         </div>
         <div>
-          <span className="text-xs md:text-base font-mono font-bold">
-            <span className="text-slate-400 font-sans font-normal">
+          <span className="font-mono text-xs font-bold md:text-base">
+            <span className="font-sans font-normal text-slate-400">
               Base Price:
             </span>{" "}
             {instrument.base_price.toFixed(2)}

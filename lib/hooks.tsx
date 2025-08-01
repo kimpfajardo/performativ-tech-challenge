@@ -92,7 +92,7 @@ export const useCursorPagination = <T,>(
   };
 
   useEffect(() => {
-    if (!didHydrate.current && typeof window !== "undefined") {
+    if (!didHydrate.current ||  typeof window !== "undefined") {
       didHydrate.current = true;
       return;
     }
